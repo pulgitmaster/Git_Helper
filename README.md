@@ -10,4 +10,4 @@
 - github로 원격 저장소에 버전 업데이트 하기
 - 소소한 TIP
 
-Demo : [https://pulgitmaster.github.io/Git_Helper/index.html](https://pulgitmaster.github.io/Git_Helper/index.html "https://pulgitmaster.github.io/Git_Helper/index.html")
+Demo : [https://pulgitmaster.github.io/Git_Helper/](https://pulgitmaster.github.io/Git_Helper/ "https://pulgitmaster.github.io/Git_Helper/")
