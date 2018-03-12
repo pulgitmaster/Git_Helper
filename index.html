@@ -83,6 +83,7 @@
   	<nav class="navbar navbar-light bg-light" style="background-color: #111;">
 		    <img class="head_img" src="img/rrc_logo.jpg" width="160" height="160" class="d-inline-block align-top" alt="">
 		    <span class="head_line">&nbsp;&nbsp;INHA UNIVERSITY ROBOT RESEARCH CLUB</span>
+		    <div class="container-fluid"></div>
 		</nav>
   	<div class="container">
   		<h1>Index</h1><br>
@@ -100,7 +101,7 @@
           <h4>나만의 깃허브 저장소 만들기&nbsp;&nbsp;<small>making your own github repository</small></h4>
         </li>
         <li>
-          <h4>로컬 저장소와 원격 저장소&nbsp;&nbsp;<small>local vs remote</small></h4>
+          <h4>로컬 저장소에서 버전 관리하기&nbsp;&nbsp;<small>version control at local</small></h4>
         </li>
         <li>
           <h4>로컬 저장소와 원격 저장소의 동기화&nbsp;&nbsp;<small>synchronize local repository with remote repository</small></h4>
@@ -182,7 +183,7 @@
         <p>도중에 설정한 모든 내용은 후에 바꾸기 가능 Don't Worry</p>
         <br>
         <h3>For Linux user</h3><br>
-        <p>서버에 올라와 있는 최신 version으로 업데이트해준다.</p>
+        <p>서버에 올라와 있는 최신 version의 어플리케이션을 받아온다.</p>
         <kbd><big>sudo apt-get update</big></kbd><br>
         <kbd><big>sudo apt-get upgrade</big></kbd><br>
         <br>
@@ -200,32 +201,32 @@
           여기서는 심각하게 기본적인 명령어만 다룬다.<br>advanced user는 걍 뒤로가기해서 시간 아끼는거 추천.
         </blockquote>
 
-        <h3><code>git init</code></h3><br>
+        <h3 id="git_init"><code>git init</code></h3><br>
         <p>현재 경로에서 부터 버전관리를 시작하기 위한 로컬 저장소 생성</p>
         <p><kbd>ls -al</kbd> 명령어로 .git 폴더(디렉터리)를 확인 할 수 있다.</p><br><br>
 
-        <h3><code>git clone</code></h3><br>
+        <h3 id="git_clone"><code>git clone</code></h3><br>
         <p>예컨데, 여러분이 앞으로 절대적으로 가장 많이 쓸 명령어</p>
         <p>원격 저장소에서 폴더(디렉터리) 통째로 copy 해온다.</p>
         <p>사용은 너무나도 간단하다.</p>
         <p>usage : <kbd>git clone [원격저장소의 주소]</kbd></p>
         <br><br>
 
-        <h3><code>git status</code></h3><br>
+        <h3 id="git_status"><code>git status</code></h3><br>
         <p>변경된 이력의 파일에 대한 정보를 띄워준다.</p>
         <p>무엇을 어떻게 인덱싱 해야하는지 친절히 알려준다.</p>
         <p>usage : <kbd>git status</kbd></p>
         <br><br>
 
 
-        <h3><code>git add</code></h3><br>
+        <h3 id="git_add"><code>git add</code></h3><br>
         <p>work stage에 있는 파일을 index에 기록하는 작업</p>
         <p>index(인덱스)에 대한 설명이 너모너모 잘 되있는 곳 : <a href="https://backlog.com/git-tutorial/kr/intro/intro1_4.html" target="_blank">here</a></p>
         <p>간단히 말하자면, <kbd>git commit</kbd>전에 반드시 <kbd>git add</kbd>로 indexing해야 한다.</p>
         <p>usage : <kbd>git add .</kbd> <kbd>git add *</kbd> <kbd>git add README.md</kbd> <kbd>git add [FILE_NAME]</kbd></p>
         <br><br>
 
-        <h3><code>git commit</code></h3><br>
+        <h3 id="git_commit"><code>git commit</code></h3><br>
         <p>index에 기록된 파일을 최종 수정본으로 등록하는 작업</p>
         <p>개인 작업 및 협업을 할 때 "~부분을 수정했다" 같은 짧은 노트를 남기면서 등록하는 개념,<br>수정된 부분에 대한 노트파일(ex .txt)을 따로 만들지 않아도 되는 아주 혜자 명령어.</p>
         <p>usage : <kbd>git commit -m "my first commit"</kbd></p>
@@ -235,29 +236,30 @@
         <p><small>누군지 알려달라고 하는데, --global 옵션은 만약 모든 원격 저장소에서 같은 이름(id)으로 commit을 한다면 사용해도 좋지만, 아닐 경우 <kbd>git config user.email "anonymous@mail.com"</kbd>과 같이 입력할 것!</small></p><br><br>
 
 
-        <h3><code>git reset</code></h3><br>
+        <h3 id="git_reset"><code>git reset</code></h3><br>
         <p>이 명령어를 배우는 이유는 <kbd>git add</kbd>를 잘못하였을 경우</p>
         <p><kbd>git reset</kbd>으로 git add로 indexing된 파일을 work stage 단계로 돌이킬 수 있음.</p>
+        <p>click! &rarr; <a href="img/git_reset.png" target="_blank">이미지를 열어 <b>확실히</b> 이해하기!</a></p>
         <p>usage : <kbd>git reset</kbd> <kbd>git reset README.md</kbd></p><br><br>
 
-        <h3><code>git log</code></h3><br>
+        <h3 id="git_log"><code>git log</code></h3><br>
         <p>그 동안 어떤 파일을 commit하였는지 log를 알려주는 명령어</p>
         <p>usage : <kbd>git log -p</kbd></p>
         <p><small>-p 옵션은 <kbd>git diff</kbd>라는 명령어의 수고로움 까지 덜어준다. GOOD!</small></p><br><br>
 
-        <h3><code>git pull</code></h3><br>
+        <h3 id="git_pull"><code>git pull</code></h3><br>
         <p>원격 저장소와 로컬저장소를 동기화 시켜주는 데 있어 가장 중요한 명령어</p>
         <p>원격 저장소의 최신 버전을 현재 로컬 저장소에 적용한다.</p>
         <p>단, 아래에서 더 심도있게 다루겠지만 최종 push된 버전의 파일에 대해 사용자가 로컬에서 별도의 버전(version)으로 commit하고 pull request 시 충돌(conflict)이 발생한다.</p>
         <p>usage : <kbd>git pull</kbd></p><br><br>
 
-        <h3><code>git push</code></h3><br>
+        <h3 id="git_push"><code>git push</code></h3><br>
         <p>로컬에서 커밋 한 파일의 버전을 원격저장소로 업데이트 할때 사용</p>
         <p>위의 <kbd>git pull</kbd>에 대해 충돌이 일어나지 않는 경우에 <kbd>git push</kbd>로 remote의 버전 업데이트가 가능하다.</p>
         <p>usage : <kbd>git push</kbd></p>
         <p class="text-muted"><small>난 충돌이 뭔지도 모르겠고, 충돌을 경험하기 싫다면 <kbd>git pull</kbd> &rarr; <kbd>git push</kbd></small></p><br><br>
 
-        <h3><code>git fetch</code></h3><br>
+        <h3 id="git_fetch"><code>git fetch</code></h3><br>
         <p>쓰임새는 <kbd>git pull</kbd>과 같지만, 로컬에서 사용자의 파일에 대한 수정을 존중(?)해준다.</p>
         <p>예를 들자면, 로컬 저장소에서 원격 저장소와 같은 버전의 파일을 수정하고 <kbd>git pull</kbd> 명령어를 입력하면 다음과 같은 error를 볼 수 있다.</p>
         <img src="img/conflict0.png" class="img-responsive">
@@ -266,39 +268,169 @@
         <p>하지만 이런 유연함 때문에 오히려 초보자들에게는 <span class="text-success">'독'</span> 이 될 수도 있다.</p>
         <p>usage : <kbd>git fetch</kbd></p><br><br>
 
-        <p>위의 명령어 외에도 수 많은 명령어가 있지만 </p>
-
+        <p>위의 명령어 외에도 수 많은 명령어가 있다.</p>
+        <p>아주 기초가 되는 기본적인 명령어는 다 소개했으니 심화 학습을 원한다면 <a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-명령어-설치와-설정" target="_blank">공식 git-document 사이트</a>에서 명령어를 직접 실습해보면서 공부하는 것을 추천한다.</p>
+        <br>
       </div>
 
       <hr>
 
       <div class="content">
-  		  <h1 id="index4">Making your own <span class="text-primary">github</span> repository</h1><br>
+  		  <h1 id="index4">Making your own <a href="https://github.com/" target="_blank">github</a> repository&nbsp;<img src="img/github-mark.png" width="8%"></h1><br>
+
+  		  <p>우선 왜 깃헙을 써야할까?</p><br>
+  		  <ul>
+  		  	<li><p>가장 활성화 된 커뮤니티 in the world</p></li>
+  		  	<li><p>여러분에게 공짜로 저장소를 줌.</p></li>
+  		  	<li><p>솔직히 github 없었으면 그동안 했던 과제나 프로젝트 어떻게 됬을까? &nbsp;<small class="text-muted">필자는 상상이 안됨</small></p></li>
+  		  	<li><p>최신 기술의 트랜드를 한 눈에 보여줌.</p></li>
+  		  	 <ul>
+  		  	 	<li>
+  		  	 		<p>
+  		  	 			<a href="https://github.com/trending" target="_blank">github에서 실시간으로 가장 인기 많은 프로젝트(저장소)</a>
+  		  	 		</p>
+  		  	 	</li>
+  		  	 	<li>
+  		  	 		<p>
+  		  	 			<a href="https://madnight.github.io/githut/#/pull_requests/2017/4" target="_blank">2017년 4분기(하반기) 가장 인기 많은 프로그래밍 언어</a>
+  		  	 		</p>
+  		  	 	</li>
+  		  	 </ul>
+  		  	 <li><p>그 외의 경이로운 통계들(2017년 8월 기준) &rarr; <a href="https://expandedramblings.com/index.php/github-statistics/" target="_blank">link</a></p></li>
+  		  </ul><br>
+  		  <a href="https://github.com" target="_blank"><img src="img/github-logo2.png" width="20%" title="github 메인 페이지 열기"></a>
+  		  <p>직접 github repository를 만들어보자. start a project 버튼 누르기</p><br>
+  		  <img src="img/making_repository1.png" class="img-responsive">
+  		  <p style="text-decoration: line-through;"><small>여러분이 매일 프로젝트(혹은 과제)를 하면서 <span class="text-primary">Download ZIP</span> 버튼만 눌렀던 그 사이트가 맞음.</small></p><br>
+
+  		  <p>&bullet; github에서는 기본적으로 다른 사람과 프로젝트 이름이 겹쳐도 무방하다.</p>
+  		  <p>&nbsp;&rarr; Owner 단위로 관리하기 때문.</p><br>
+
+  		  <p>&bullet; Initialize this repository with a README 라는 check box가 있는데 check를 하고 Create 버튼을 누른다.</p><br>
+
+  		  <p>&bullet; README.md 파일은 저장소에 대한 설명을 적어 놓는 markdown 이란 파일이다.</p>
+	  		<p>&nbsp;&nbsp;markdown 파일의 작성법은 <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601" target="_blank">여기에서</a> 확인할 수 있다. <small class="text-danger">설명이 너무 잘되어 있다.</small></p><br>
       </div>
 
       <hr>
 
       <div class="content">
-        <h1 id="index5">Local vs Remote</h1><br>
+        <h1 id="index5">Version control at local</h1><br>
+        <p>본격적으로 버전 관리를 git bash를 이용해 실습해본다.</p><br>
+        <h3>&bullet; Initialize local git repository</h3>
+        <p><a href="https://git-scm.com/downloads" target="_blank">git-scm</a>사이트에서 파일을 다운받고 나면 <u>버전 관리할 폴더 내에서</u> 우클릭 하면 아래와 같이 'git bash here'이란 버튼을 볼 수 있다.</p>
+        <img src="img/git_bash1.png" class="img-responsive"><br>
+
+        <p>누르게 되면 다음과 같은 화면이 뜨는데, <a href="#git_init"><code>git init</code></a>을 입력한다.</p>
+        <p>.git이란 숨겨진 폴더가 생성되며, 앞으로 여러분의 모든 커밋<small>(버전에 대한 기록)</small>은 이 폴더에 저장된다.</p><br>
+
+        <p>버전관리할 파일을 만들어본다.</p>
+        <p><kbd>touch ex1.txt</kbd> touch는 리눅스 명령어로 CLI환경에서 용량 0의 파일을 만들 때 사용한다.</p>
+        <p>윈도우에서는 마우스 우클릭하고 새로 만들기를 사용하자.</p><br>
+
+        <p>만들어진 파일(txt든 뭐든)을 편집하고 <kbd>Ctrl + s</kbd>로 저장한다.</p>
+        <p>저장하고 <a href="#git_status"><code>git status</code></a> 명령어를 입력하면 현재 work stage에 변경 된 파일이 있는지 확인하고 알려준다.</p><br>
+
+        <h3>&bullet; Add file to index</h3>
+        <p><a href="#git_add"><code>git add</code></a> 명령어로 변경 된 파일에 대하여 index에 기록해보자.<br>현재 폴더내에서 모든 파일을 indexing 할 때는 <kbd>git add *</kbd> 명령어를 사용한다.</p>
+        <p>대부분의 git user는 <kbd>git add *</kbd>을 사용한다. <small>(파일명 별로 추가하는건 귀찮으니깐...)</small></p><br>
+
+        <h3>&bullet; Final stage : Commit</h3>
+        <p>파일은 indexing되면 user로부터 최종 확인을 위해 간략한 설명(commit)을 기다린다.</p>
+        <p><a href="#git_commit"><code>git commit</code></a>이 성공하게 되면 해당 파일의 버전에 대한 기록이 고유한 주소를 가진 파일로 .git에 기록된다.</p>
+        <p><kbd>git commit -m "남기고 싶은 메세지"</kbd>을 입력하자.</p>
+        <p>error가 뜨지 않았다면, 여러분은 성공적으로 파일의 첫 버전을 local에 등록(기록)하였다.</p><br>
+
+        <h3>&bullet; Confirm log of version</h3>
+        <p>최종 커밋 후 <a href="#git_log"><code>git log</code></a>명령어를 통해 commit 내용을 확인할 수 있다.</p>
+        <p>상하 방향키로 스크롤을 조종할 수 있다.<br><kbd>space_bar</kbd>를 누르면 한 페이지가 넘어가고, <kbd>q</kbd>를 누르면 종료된다.</p><br>
+        <p>모든 commit의 history를 다 보여주기 때문에 최근의 commit만 보고 싶은 경우 -(숫자) option을 추가해줄 수 있다.</p>
+        <p><small>example : <kbd>git log -2</kbd>는 가장 최근 2개의 commit 내역을 보여준다.</small></p><br>
+
+        <p>또한 -p 옵션을 이용하여 상세 history를 볼 수도 있다 : <kbd>git log -p</kbd></p><br>
+
       </div>
 
       <hr>
 
       <div class="content">
         <h1 id="index6">Synchronize local with remote</h1><br>
+        <p>이 강의 노트에 목적인 원격 저장소와 동기화 시키는 방법을 소개한다.</p><br>
+        <p>앞에서 만든 <a href="https://github.com" target="_blank">github repository</a>에 동기화 시키는 두가지 방법이있다.</p><br>
+        <ul>
+        	<li>
+        		<p>원격 저장소를 복제 후 push하여 update하는 방법</p>
+        	</li>
+        	<li>
+        		<p>기존에 버전 관리를 하고 있던 local 저장소를 원격 저장소에 추가하는 방법</p>
+        	</li>
+        </ul><br>
+
+        <p>두 가지 방법 중 어느 것이 맞고 틀린건 없다. 본인이 편한 방법대로 할 것!</p><br>
+
+        <h3>1. Cloning and Push</h3><br>
+        <p>우선 첫 번째 방법 먼저 살펴본다.</p><br>
+
+        <p>&bullet; <a href="#git_clone"><code>git clone [remote address]</code></a>명령어를 사용하여 원격 저장소를 복제한다.</p>
+        <p>&nbsp;&nbsp;앞에서 생성한 원격 저장소 이름과 똑같은 이름을 가진 폴더가 생성된다.</p>
+        <p>&nbsp;&nbsp;<a href="#git_init"><code>git init</code></a>때 와 마찬가지로 .git 이란 폴더 역시 생성된다.</p><br>
+
+        <p>&bullet;&nbsp;원격 저장소에서 복제해온 것이기 때문에 remote 주소를 따로 입력할 필요가 없다.</p>
+        <p>&nbsp;&nbsp;<code>git remote -v</code>를 입력해보자.</p>
+        <p>&nbsp;&nbsp;원격 저장소의 push 주소와 fetch 주소가 나온다.</p><br>
+
+        <p>&bullet;&nbsp;버전관리할 파일을 생성 / 편집 / 제거 후 <a href="#git_add"><code>git add</code></a>명령어로 추가 해준다.</p><br>
+
+        <p>&bullet;&nbsp;indexing된 파일을 commit하여 <u>local 저장소에서</u> 버전을 업데이트 한다.</p>
+        <p>&nbsp;&nbsp;여기서 아무리 <a href="#git_commit"><code>git commit</code></a>해봐야 원격 저장소는 <b>아직</b> 영향을 받지 않는다. <small class="text-muted">겁먹지 말자</small></p>
+        <p>&nbsp;&nbsp;만약 commit을 잘못 한 경우 <code>git revert</code>로 commit을 무마시킬 수 있다.</p>
+        <p>&nbsp;&nbsp;usage : <kbd>git revert [commit 주소]</kbd><br>&nbsp;&nbsp;&rarr; <small class="text-muted">git의 매커니즘을 완벽히 이해하고 쓰는 것이 좋다ㅠ</small></p><br>
+
+        <p>&bullet;&nbsp;이제 local의 최신 버전을 원격으로 push 해준다.</p>
+        <p>&nbsp;&nbsp;<a href="#git_push"><code>git push</code></a>를 입력하자. <small class="text-muted">So simple~</small></p><br>
+
+        <p>정리 : <code>git clone</code> &rarr; <code>git add</code> &rarr; <code>git commit</code> &rarr; <code>git push</code></p><br>
+
+        <h3>2. Add remote repository address to local repository</h3><br>
+        <p>두 번째 방법은 약간(?) 난이도가 있는 방법이다.</p>
+        <p>local에서 버전관리를 하던 repository에 원격 주소를 추가 해주는 작업에서 초심자들은 온 갖 <span class="text-warning">trouble shooting</span>을 맞이할 수 있다.</p><br>
+
+        <p>&bullet;&nbsp;<a href="#git_init"><code>git init</code></a>으로 초기화가 되어 있는 local 저장소란 가정하에 진행한다.</p><p>&nbsp;&nbsp;우선 원격 저장소 주소를 입력해 주어야 한다.</p>
+        <p>&nbsp;&nbsp;<code>git remote add [저장소 닉네임] [github 주소]</code></p>
+        <p>&nbsp;&nbsp;[저장소 닉네임]을 지정하지 않고 remote add를 할 경우 자동으로 'origin'으로 등록된다.</p>
+        <p>&nbsp;&nbsp;example : <code>git remote add https://github.com/pulgitmaster/Git_Helper</code></p><br>
+
+        <p>&bullet;&nbsp;<code>git remote -v</code>로 주소가 제대로 입력되었는지 확인해본다.</p>
+        <p>&nbsp;&nbsp;잘못 입력된 경우 <code>git remote rm [닉네임]</code>으로 remote 주소를 제거할 수 있다.</p><br>
+
+        <p>&bullet;&nbsp;위와 마찬가지로 생성 / 편집 / 제거 할 파일을 <code>git add</code>부터 <code>git commit</code>까지 해주고</p>
+        <p>&nbsp;&nbsp;<code>git push origin master</code>를 입력!&nbsp; <small class="text-muted">최초 입력 후에는 <code>git push</code>만 해도 된다.</small></p><br>
+
+        <p>첫 번째 방법과 비슷하면서도 다른 면이 있다.</p>
+        <p>기존에 하던 버전 관리를 원격으로 까지 확장시킨다는 면에서는 이 방법을 아주 추천한다.</p><br>
+
+        <p>정리 : <code>git init</code> &rarr; 버전관리(local) &rarr; <code>git remote add</code> &rarr; <code>git push origin master</code></p>
+
       </div>
 
       <hr>
 
       <h1 id="index7" hidden="true"><span class="text-warning">아</span> <span class="text-danger">어쩌라고</span> <span class="text-success"><b>난</b></span> <span class="text-primary">뭔소린지 1도 모르겠어</span></h1><br>
 
+      <hr>
 
   		<h1>URL reference</h1>
   		<blockquote>여러분에게 도움이 될만한 사이트의 주소</blockquote>
   		<ul>
   			<li>
-  				<h4><a href="https://www.lesstif.com/pages/viewpage.action?pageId=20775062" target="_blank">https://www.lesstif.com/pages/viewpage.action?pageId=20775062</a></h4>
-  				<p>git의 기본적인 명령어와 깃허브를 사용하기 위한 GUI TOOL에 대한 설명이 상세하게 나와있음.</p>
+  				<h4><a href="https://opentutorials.org/course/1492" target="_blank">https://opentutorials.org/course/1492</a></h4>
+  				<p>이번 강의에서 다루지 않은 GUI tool을 이용한 git을 배울 수 있다.</p>
+  				<p><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a>란 유명한 GUI 버전 관리 프로그램을 이용한다.</p>
+  			</li><br>
+  			<li>
+  				<h4><a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95" target="_blank">https://git-scm.com</a></h4>
+  				<p>개발자에게는 공식 사이트가 가장 신뢰성있고 우선시 되어야한다.</p>
+  				<p>위의 사이트는 git 공식 사이트이며, git에 대한 모든 내용을 담고 있다.</p>
   			</li>
   		</ul>
   		
