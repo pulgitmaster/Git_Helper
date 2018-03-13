@@ -118,7 +118,7 @@
         <h1 id="index1"><img src="img/git_logo.png">&nbsp;What is git ?</h1><br>
 
         <p>&nbsp;버전 관리 시스템(vcs)중 하나 이며, 가장 널리 사용 되고 있다. <span style="text-decoration: line-through;">(리누스 토발즈 만세)</span><br>GIT에 대한 사전적 정의와 유례 정도는 <a href="https://ko.wikipedia.org/wiki/%EA%B9%83_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)" target="_blank">여기</a>로 들어가서 정독하는 것도 권장.</p>
-        <p>이 강의 노트를 보고 있는 여러분 중에선 자신의 <span class="text-danger">모든 소스코드나 프로젝트를</span> 웹 하드에서 관리 하는 습관을 가진 사람이 있을지 모른다.<br>본인은 몰랐겠지만 <b>은연중에</b> 버전관리를 하고 있었다!</p><br>
+        <p>이 강의 노트를 보고 있는 여러분 중에선 자신의 <span class="text-danger">모든 소스코드나 프로젝트를</span> 웹 하드에서 관리 하는 습관을 가진 사람이 있을지 모른다.<br>본인은 몰랐겠지만 <b>은연중에</b> 버전 관리를 하고 있었다!</p><br>
 
         <h4>대표적인 버전 관리 예 (a.k.a Web Hard)</h4>
         <ul>
@@ -136,7 +136,7 @@
           </div>
           <div class="col-sm-1 col-md-1"></div>
         </div>
-        <span>출처 : <a href="img/reason1.png" target="_blank">우리가 Git을 알아야하는 이유1</a></span><br><br>
+        <span>원본(img) : <a href="img/reason1.png" target="_blank">우리가 Git을 알아야하는 이유1</a></span><br><br>
 
         <div class="row ex2">
           <div class="col-sm-11 col-md-11">
@@ -144,7 +144,7 @@
           </div>
           <div class="col-sm-1 col-md-1"></div>
         </div>
-        <span>출처 : <a href="img/reason2.png" target="_blank">우리가 Git을 알아야하는 이유2</a></span><br><br>
+        <span>img : <a href="img/reason2.png" target="_blank">우리가 Git을 알아야하는 이유2</a></span><br><br>
 
         <div class="row ex3">
           <div class="col-sm-11 col-md-11">
@@ -152,11 +152,11 @@
           </div>
           <div class="col-sm-1 col-md-1"></div>
         </div>
-        <span>출처 : <a href="img/reason3.png" target="_blank">우리가 Git을 알아야하는 이유3</a></span><br><br>
+        <span>img : <a href="img/reason3.png" target="_blank">우리가 Git을 알아야하는 이유3</a></span><br><br>
 
         <p>그 외의 자료들</p><br>
-        <span>Image : <a href="img/reason4.png" target="_blank">우리가 Git을 알아야하는 이유4</a></span><br>
-        <span>Image : <a href="img/reason5.png" target="_blank">우리가 Git을 알아야하는 이유5</a></span><br><br>
+        <span>img : <a href="img/reason4.png" target="_blank">우리가 Git을 알아야하는 이유4</a></span><br>
+        <span>img : <a href="img/reason5.png" target="_blank">우리가 Git을 알아야하는 이유5</a></span><br><br>
         
         <p><span class="text-danger">p.s.</span> 보안적 이유&nbsp;&nbsp;<small>ransomware</small></p>
         <img src="img/ransomware.jpg" class="img-responsive">
@@ -170,7 +170,9 @@
       <hr>
 
       <div class="content">
-        <h1 id="index2">Installation</h1><br>
+        <h1 id="index2">Installation</h1>
+		<blockquote>For Windows User</blockquote>
+        <br>
         <p>아래 <a href="https://git-scm.com/downloads" target="_blank">링크</a>에 들어간다.</p>
         <p><a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></p><br>
 
@@ -182,7 +184,9 @@
 
         <p>도중에 설정한 모든 내용은 후에 바꾸기 가능 Don't Worry</p>
         <br>
-        <h3>For Linux user</h3><br>
+        <h1>Installation</h1>
+        <blockquote>For Linux User	<small>based on Debian</small></blockquote>
+        <br>
         <p>서버에 올라와 있는 최신 version의 어플리케이션을 받아온다.</p>
         <kbd><big>sudo apt-get update</big></kbd><br>
         <kbd><big>sudo apt-get upgrade</big></kbd><br>
@@ -393,7 +397,7 @@
 
         <h3>2. Add remote repository address to local repository</h3><br>
         <p>두 번째 방법은 약간(?) 난이도가 있는 방법이다.</p>
-        <p>local에서 버전관리를 하던 repository에 원격 주소를 추가 해주는 작업에서 초심자들은 온 갖 <span class="text-warning">trouble shooting</span>을 맞이할 수 있다.</p><br>
+        <p>local에서 버전관리를 하던 workspace에 원격 주소를 추가 해주는 작업에서 초심자들은 온 갖 <span class="text-warning">trouble shooting</span>을 맞이할 수 있다.</p><br>
 
         <p>&bullet;&nbsp;<a href="#git_init"><code>git init</code></a>으로 초기화가 되어 있는 local 저장소란 가정하에 진행한다.</p><p>&nbsp;&nbsp;우선 원격 저장소 주소를 입력해 주어야 한다.</p>
         <p>&nbsp;&nbsp;<code>git remote add [저장소 닉네임] [github 주소]</code></p>
@@ -429,7 +433,7 @@
   			</li><br>
   			<li>
   				<h4><a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95" target="_blank">https://git-scm.com</a></h4>
-  				<p>개발자에게는 공식 사이트가 가장 신뢰성있고 우선시 되어야한다.</p>
+  				<p>개발자에게는 공식 사이트가 가장 우선시 되어야한다 신뢰도가 보장 되기 때문이다.</p>
   				<p>위의 사이트는 git 공식 사이트이며, git에 대한 모든 내용을 담고 있다.</p>
   			</li>
   		</ul>
