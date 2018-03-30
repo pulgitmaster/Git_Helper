@@ -6,97 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Huro Lecture - GIT</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
-    	@media only screen and (min-width:1218px){
-    		span.head_line{
-    			font-size: 48px;
-    		}
-    	}
-
-    	@media only screen and (max-width:1218px){
-    		span.head_line{
-    			font-size: 28px;
-    		}
-    		.head_img{
-    			max-width: 120px;
-    			max-height: 120px;
-    		}
-    	}
-
-    	@media only screen and (max-width:960px){
-    		span.head_line{
-    			font-size: 24px;
-    		}
-    		.head_img{
-    			max-width: 110px;
-    			max-height: 110px;
-    		}
-    	}
-
-    	@media only screen and (max-width:730px){
-    		span.head_line{
-    			font-size: 12px;
-    		}
-    		.head_img{
-    			max-width: 100px;
-    			max-height: 100px;
-    		}
-    	}
-
-    	@media only screen and (max-width:430px){
-    		span.head_line{
-    			font-size: 8px;
-    		}
-    		.head_img{
-    			max-width: 80px;
-    			max-height: 80px;
-    		}
-    	}
-
-      div.content > p{
-        font-size: large;
-        margin: auto;
+      @media only screen and (min-width:1218px){
+        span.head_line{
+          font-size: 48px;
+        }
       }
+      @media only screen and (max-width:1218px){
+        span.head_line{
+          font-size: 28px;
+        }
+        .head_img{
+          max-width: 120px;
+          max-height: 120px;
+        }
+      }
+      @media only screen and (max-width:960px){
+        span.head_line{
+          font-size: 24px;
+        }
+        .head_img{
+          max-width: 110px;
+          max-height: 110px;
+        }
+      }
+      @media only screen and (max-width:730px){
+        span.head_line{
+          font-size: 12px;
+        }
+        .head_img{
+          max-width: 100px;
+          max-height: 100px;
+        }
+      }
+      @media only screen and (max-width:430px){
+        span.head_line{
+          font-size: 8px;
+        }
+        .head_img{
+          max-width: 80px;
+          max-height: 80px;
+        }
+      }
+    div.content > p{
+    font-size: large;
+    margin: auto;
+    }
     </style>
     
   </head>
   <body>
-  	<nav class="navbar navbar-light bg-light" style="background-color: #111;">
-		    <img class="head_img" src="img/rrc_logo.jpg" width="160" height="160" class="d-inline-block align-top" alt="">
-		    <span class="head_line">&nbsp;&nbsp;INHA UNIVERSITY ROBOT RESEARCH CLUB</span>
-		    <div class="container-fluid"></div>
-		</nav>
-  	<div class="container">
-  		<h1>Index</h1><br>
-  		<ul class="head_index">
-  			<li>
-  				<h4>GIT 이란?&nbsp;&nbsp;<small>what is git?</small></h4>
-  			</li>
-  			<li>
-  				<h4>GIT 설치&nbsp;&nbsp;<small>git installation</small></h4>
-  			</li>
-  			<li>
-  				<h4>기본적인 명령어 배우기&nbsp;&nbsp;<small>learn basic command set</small></h4>
-  			</li>
+    <nav class="navbar navbar-light bg-light" style="background-color: #111;">
+      <img class="head_img" src="img/rrc_logo.jpg" width="160" height="160" class="d-inline-block align-top" alt="">
+      <span class="head_line">&nbsp;&nbsp;INHA UNIVERSITY ROBOT RESEARCH CLUB</span>
+      <div class="container-fluid"></div>
+    </nav>
+    <div class="container">
+      <h1>Index</h1><br>
+      <ul class="head_index">
+        <li>
+          <h4>GIT 이란?&nbsp;&nbsp;<small>what is git?</small></h4>
+        </li>
+        <li>
+          <h4>GIT 설치&nbsp;&nbsp;<small>git installation</small></h4>
+        </li>
+        <li>
+          <h4>기본적인 명령어 배우기&nbsp;&nbsp;<small>learn basic command set</small></h4>
+        </li>
         <li>
           <h4>나만의 깃허브 저장소 만들기&nbsp;&nbsp;<small>making your own github repository</small></h4>
         </li>
@@ -109,17 +99,13 @@
         <li hidden="true">
           <h4>hidden stage&nbsp;&nbsp;</h4>
         </li>
-  		</ul>
+      </ul>
       <br>
-
       <hr>
-
       <div class="content">
         <h1 id="index1"><img src="img/git_logo.png">&nbsp;What is git ?</h1><br>
-
         <p>&nbsp;버전 관리 시스템(vcs)중 하나 이며, 가장 널리 사용 되고 있다. <span style="text-decoration: line-through;">(리누스 토발즈 만세)</span><br>GIT에 대한 사전적 정의와 유례 정도는 <a href="https://ko.wikipedia.org/wiki/%EA%B9%83_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)" target="_blank">여기</a>로 들어가서 정독하는 것도 권장.</p>
         <p>이 강의 노트를 보고 있는 여러분 중에선 자신의 <span class="text-danger">모든 소스코드나 프로젝트를</span> 웹 하드에서 관리 하는 습관을 가진 사람이 있을지 모른다.<br>본인은 몰랐겠지만 <b>은연중에</b> 버전 관리를 하고 있었다!</p><br>
-
         <h4>대표적인 버전 관리 예 (a.k.a Web Hard)</h4>
         <ul>
           <li><big>Google drive</big></li><br>
@@ -127,9 +113,7 @@
           <li><big>Naver cloud</big></li><br>
           <li><big>Microsoft Onedrive</big></li><br>
         </ul>
-
         <h4>Ok, 근데 git을 왜 배워야할까?</h4><br>
-
         <div class="row ex1">
           <div class="col-sm-11 col-md-11">
             <pre><p>ex1 소프트웨어 엔지니어의 포트폴리오 작성 요령중...</p><p>가능하면 GitHub이나 BitBucket 같은 Git 호스팅 서비스에 올려두자.<br>요즘은 <u>SVN이든 Git이든 VCS를 사용하지 않는 업체를 찾기 어려울 정도이다.</u><br>혹시 VCS를 전혀 사용하지 않는 개발 업체가 있다면, <u>입사를 다시 한번 고민해보라고 진지하게 말하고 싶다.</u><br>입사 지원자에게 GitHub 계정 링크를 알려달라는 곳이 해외는 물론 국내에도 꽤 있다.<br>가능하면 포트폴리오를 앞서 말한 두 서비스 중 하나를 택해서 올려두는 게 좋다.<br>개인적으로는 <span class="text-primary">GitHub</span>를 추천하는데, 사용자가 더 많아서 문제가 생겼을 때 도움을 구하기 쉽기 때문이다.</p></pre>
@@ -137,7 +121,6 @@
           <div class="col-sm-1 col-md-1"></div>
         </div>
         <span>원본(img) : <a href="img/reason1.png" target="_blank">우리가 Git을 알아야하는 이유1</a></span><br><br>
-
         <div class="row ex2">
           <div class="col-sm-11 col-md-11">
             <pre><p>ex2 구글 애플 개발자가 기여한 '프론트엔드 개발자 인터뷰 질문' 중...</p><p>'프론트엔드 개발자 인터뷰 질문'은 깃허브에 올라온 인터뷰 관련 프로젝트에서 가장 인기가 높습니다.<br>(...생략...)<br>프론트엔드 개발자에 대한 질문은 아래와 같습니다.<br><br>&bullet;일반 부문<br><u>어떤 버전 컨트롤 시스템을</u> 잘 알고 있습니까?&nbsp;</p></pre>
@@ -145,7 +128,6 @@
           <div class="col-sm-1 col-md-1"></div>
         </div>
         <span>img : <a href="img/reason2.png" target="_blank">우리가 Git을 알아야하는 이유2</a></span><br><br>
-
         <div class="row ex3">
           <div class="col-sm-11 col-md-11">
             <pre><p>ex3 깃 허브 나무위키 내용 중...</p><p>한국을 포함한 전세계 IT 업계에서는 프로그래머 면접에서 GitHub 계정이 일종의 포트폴리오<br>역할을 할 수 있기 때문에...<br>입사지원서에 <span class="text-primary">GitHub</span> 계정/url을 요구하는 곳도 있고 <b>점점 늘어나는 추세다.</b></p></pre>
@@ -153,7 +135,6 @@
           <div class="col-sm-1 col-md-1"></div>
         </div>
         <span>img : <a href="img/reason3.png" target="_blank">우리가 Git을 알아야하는 이유3</a></span><br><br>
-
         <p>그 외의 자료들</p><br>
         <span>img : <a href="img/reason4.png" target="_blank">우리가 Git을 알아야하는 이유4</a></span><br>
         <span>img : <a href="img/reason5.png" target="_blank">우리가 Git을 알아야하는 이유5</a></span><br><br>
@@ -162,401 +143,330 @@
         <img src="img/ransomware.jpg" class="img-responsive">
         <h6 class="text-muted">원격 저장소에서 버전관리 안하고 있다가 랜섬웨어로 나의 피같은 소스코드가 있는 하드드라이브가 돌덩이가 되었다? SHIIIIIT!</h6>
         <br>
-
         <p>이번 강의에서는 어떤 OS에서 어떤 프로젝트를 진행하더라도 git을 사용할 수 있도록 command line interface(CLI)에서 사용하는 명령어 위주로 git을 배워보겠다.</p>
       </div>
       <br>
-
       <hr>
-
       <div class="content">
         <h1 id="index2">Installation</h1>
-		<blockquote>For Windows User</blockquote>
-        <br>
-        <p>아래 <a href="https://git-scm.com/downloads" target="_blank">링크</a>에 들어간다.</p>
-        <p><a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></p><br>
-
-        <img src="img/git_scm.png" class="img-responsive">
-        <p>Windows 버전을 설치하자.</p><br>
-
-        <img src="img/git_scm_next.png" class="img-responsive">
-        <p>설치 과정 중 나오는 모든 Next를 눌러준다.</p>
-
-        <p>도중에 설정한 모든 내용은 후에 바꾸기 가능 Don't Worry</p>
-        <br>
-        <h1>Installation</h1>
-        <blockquote>For Linux User	<small>based on Debian</small></blockquote>
-        <br>
-        <p>서버에 올라와 있는 최신 version의 어플리케이션을 받아온다.</p>
-        <kbd><big>sudo apt-get update</big></kbd><br>
-        <kbd><big>sudo apt-get upgrade</big></kbd><br>
-        <br>
-        <p>업데이트가 끝나면 git을 설치해준다.</p>
-        <kbd><big>sudo apt-get install git</big></kbd>
-        <p class="text-muted">So simple...</p>
-      </div>
+      <blockquote>For Windows User</blockquote>
       <br>
-
-      <hr>
-
-      <div class="content">
-        <h1 id="index3">Learn basic command set</h1>
-        <blockquote>
-          여기서는 심각하게 기본적인 명령어만 다룬다.<br>advanced user는 걍 뒤로가기해서 시간 아끼는거 추천.
-        </blockquote>
-
-        <h3 id="git_init"><code>git init</code></h3><br>
-        <p>현재 경로에서 부터 버전관리를 시작하기 위한 로컬 저장소 생성</p>
-        <p><kbd>ls -al</kbd> 명령어로 .git 폴더(디렉터리)를 확인 할 수 있다.</p><br><br>
-
-        <h3 id="git_clone"><code>git clone</code></h3><br>
-        <p>예컨데, 여러분이 앞으로 절대적으로 가장 많이 쓸 명령어</p>
-        <p>원격 저장소에서 폴더(디렉터리) 통째로 copy 해온다.</p>
-        <p>사용은 너무나도 간단하다.</p>
-        <p>usage : <kbd>git clone [원격저장소의 주소]</kbd></p>
-        <br><br>
-
-        <h3 id="git_status"><code>git status</code></h3><br>
-        <p>변경된 이력의 파일에 대한 정보를 띄워준다.</p>
-        <p>무엇을 어떻게 인덱싱 해야하는지 친절히 알려준다.</p>
-        <p>usage : <kbd>git status</kbd></p>
-        <br><br>
-
-
-        <h3 id="git_add"><code>git add</code></h3><br>
-        <p>work stage에 있는 파일을 index에 기록하는 작업</p>
-        <p>index(인덱스)에 대한 설명이 너모너모 잘 되있는 곳 : <a href="https://backlog.com/git-tutorial/kr/intro/intro1_4.html" target="_blank">here</a></p>
-        <p>간단히 말하자면, <kbd>git commit</kbd>전에 반드시 <kbd>git add</kbd>로 indexing해야 한다.</p>
-        <p>usage : <kbd>git add .</kbd> <kbd>git add *</kbd> <kbd>git add README.md</kbd> <kbd>git add [FILE_NAME]</kbd></p>
-        <br><br>
-
-        <h3 id="git_commit"><code>git commit</code></h3><br>
-        <p>index에 기록된 파일을 최종 수정본으로 등록하는 작업</p>
-        <p>개인 작업 및 협업을 할 때 "~부분을 수정했다" 같은 짧은 노트를 남기면서 등록하는 개념,<br>수정된 부분에 대한 노트파일(ex .txt)을 따로 만들지 않아도 되는 아주 혜자 명령어.</p>
-        <p>usage : <kbd>git commit -m "my first commit"</kbd></p>
-        <p><small><kbd>git add</kbd>명령어로 indexing된 파일 모두 commit된다.</small></p><br>
-        <p>첫 commit시 아래와 같은 오류를 볼 수 있다.</p>
-        <img src="img/git_commit.png" class="img-responsive">
-        <p><small>누군지 알려달라고 하는데, --global 옵션은 만약 모든 원격 저장소에서 같은 이름(id)으로 commit을 한다면 사용해도 좋지만, 아닐 경우 <kbd>git config user.email "anonymous@mail.com"</kbd>과 같이 입력할 것!</small></p><br><br>
-
-
-        <h3 id="git_reset"><code>git reset</code></h3><br>
-        <p>이 명령어를 배우는 이유는 <kbd>git add</kbd>를 잘못하였을 경우</p>
-        <p><kbd>git reset</kbd>으로 git add로 indexing된 파일을 work stage 단계로 돌이킬 수 있음.</p>
-        <p>click! &rarr; <a href="img/git_reset.png" target="_blank">이미지를 열어 <b>확실히</b> 이해하기!</a></p>
-        <p>usage : <kbd>git reset</kbd> <kbd>git reset README.md</kbd></p><br><br>
-
-        <h3 id="git_log"><code>git log</code></h3><br>
-        <p>그 동안 어떤 파일을 commit하였는지 log를 알려주는 명령어</p>
-        <p>usage : <kbd>git log -p</kbd></p>
-        <p><small>-p 옵션은 <kbd>git diff</kbd>라는 명령어의 수고로움 까지 덜어준다. GOOD!</small></p><br><br>
-
-        <h3 id="git_pull"><code>git pull</code></h3><br>
-        <p>원격 저장소와 로컬저장소를 동기화 시켜주는 데 있어 가장 중요한 명령어</p>
-        <p>원격 저장소의 최신 버전을 현재 로컬 저장소에 적용한다.</p>
-        <p>단, 아래에서 더 심도있게 다루겠지만 최종 push된 버전의 파일에 대해 사용자가 로컬에서 별도의 버전(version)으로 commit하고 pull request 시 충돌(conflict)이 발생한다.</p>
-        <p>usage : <kbd>git pull</kbd></p><br><br>
-
-        <h3 id="git_push"><code>git push</code></h3><br>
-        <p>로컬에서 커밋 한 파일의 버전을 원격저장소로 업데이트 할때 사용</p>
-        <p>위의 <kbd>git pull</kbd>에 대해 충돌이 일어나지 않는 경우에 <kbd>git push</kbd>로 remote의 버전 업데이트가 가능하다.</p>
-        <p>usage : <kbd>git push</kbd></p>
-        <p class="text-muted"><small>난 충돌이 뭔지도 모르겠고, 충돌을 경험하기 싫다면 <kbd>git pull</kbd> &rarr; <kbd>git push</kbd></small></p><br><br>
-
-        <h3 id="git_fetch"><code>git fetch</code></h3><br>
-        <p>쓰임새는 <kbd>git pull</kbd>과 같지만, 로컬에서 사용자의 파일에 대한 수정을 존중(?)해준다.</p>
-        <p>예를 들자면, 로컬 저장소에서 원격 저장소와 같은 버전의 파일을 수정하고 <kbd>git pull</kbd> 명령어를 입력하면 다음과 같은 error를 볼 수 있다.</p>
-        <img src="img/conflict0.png" class="img-responsive">
-        <p>반면 <kbd>git fetch</kbd> 명령어를 사용할 경우 Smooth하게 넘어가준다.</p>
-        <p>버전만 맞을 경우 사용자가 <u>필요에 의해 수정을 했다</u>라고 판단하기 때문이다.</p>
-        <p>하지만 이런 유연함 때문에 오히려 초보자들에게는 <span class="text-success">'독'</span> 이 될 수도 있다.</p>
-        <p>usage : <kbd>git fetch</kbd></p><br><br>
-
-        <p>위의 명령어 외에도 수 많은 명령어가 있다.</p>
-        <p>아주 기초가 되는 기본적인 명령어는 다 소개했으니 심화 학습을 원한다면 <a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-명령어-설치와-설정" target="_blank">공식 git-document 사이트</a>에서 명령어를 직접 실습해보면서 공부하는 것을 추천한다.</p>
-        <br>
-      </div>
-
-      <hr>
-
-      <div class="content">
-  		  <h1 id="index4">Making your own <a href="https://github.com/" target="_blank">github</a> repository&nbsp;<img src="img/github-mark.png" width="8%"></h1><br>
-
-  		  <p>우선 왜 깃헙을 써야할까?</p><br>
-  		  <ul>
-  		  	<li><p>가장 활성화 된 커뮤니티 in the world</p></li>
-  		  	<li><p>여러분에게 공짜로 저장소를 줌.</p></li>
-  		  	<li><p>솔직히 github 없었으면 그동안 했던 과제나 프로젝트 어떻게 됬을까? &nbsp;<small class="text-muted">필자는 상상이 안됨</small></p></li>
-  		  	<li><p>최신 기술의 트랜드를 한 눈에 보여줌.</p></li>
-  		  	 <ul>
-  		  	 	<li>
-  		  	 		<p>
-  		  	 			<a href="https://github.com/trending" target="_blank">github에서 실시간으로 가장 인기 많은 프로젝트(저장소)</a>
-  		  	 		</p>
-  		  	 	</li>
-  		  	 	<li>
-  		  	 		<p>
-  		  	 			<a href="https://madnight.github.io/githut/#/pull_requests/2017/4" target="_blank">2017년 4분기(하반기) 가장 인기 많은 프로그래밍 언어</a>
-  		  	 		</p>
-  		  	 	</li>
-  		  	 </ul>
-  		  	 <li><p>그 외의 경이로운 통계들(2017년 8월 기준) &rarr; <a href="https://expandedramblings.com/index.php/github-statistics/" target="_blank">link</a></p></li>
-  		  </ul><br>
-  		  <a href="https://github.com" target="_blank"><img src="img/github-logo2.png" width="20%" title="github 메인 페이지 열기"></a>
-  		  <p>직접 github repository를 만들어보자. start a project 버튼 누르기</p><br>
-  		  <img src="img/making_repository1.png" class="img-responsive">
-  		  <p style="text-decoration: line-through;"><small>여러분이 매일 프로젝트(혹은 과제)를 하면서 <span class="text-primary">Download ZIP</span> 버튼만 눌렀던 그 사이트가 맞음.</small></p><br>
-
-  		  <p>&bullet; github에서는 기본적으로 다른 사람과 프로젝트 이름이 겹쳐도 무방하다.</p>
-  		  <p>&nbsp;&rarr; Owner 단위로 관리하기 때문.</p><br>
-
-  		  <p>&bullet; Initialize this repository with a README 라는 check box가 있는데 check를 하고 Create 버튼을 누른다.</p><br>
-
-  		  <p>&bullet; README.md 파일은 저장소에 대한 설명을 적어 놓는 markdown 이란 파일이다.</p>
-	  		<p>&nbsp;&nbsp;markdown 파일의 작성법은 <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601" target="_blank">여기에서</a> 확인할 수 있다. <small class="text-danger">설명이 너무 잘되어 있다.</small></p><br>
-      </div>
-
-      <hr>
-
-      <div class="content">
-        <h1 id="index5">Version control at local</h1><br>
-        <p>본격적으로 버전 관리를 git bash를 이용해 실습해본다.</p><br>
-        <h3>&bullet; Initialize local git repository</h3>
-        <p><a href="https://git-scm.com/downloads" target="_blank">git-scm</a>사이트에서 파일을 다운받고 나면 <u>버전 관리할 폴더 내에서</u> 우클릭 하면 아래와 같이 'git bash here'이란 버튼을 볼 수 있다.</p>
-        <img src="img/git_bash1.png" class="img-responsive"><br>
-
-        <p>누르게 되면 다음과 같은 화면이 뜨는데, <a href="#git_init"><code>git init</code></a>을 입력한다.</p>
-        <p>.git이란 숨겨진 폴더가 생성되며, 앞으로 여러분의 모든 커밋<small>(버전에 대한 기록)</small>은 이 폴더에 저장된다.</p><br>
-
-        <p>버전관리할 파일을 만들어본다.</p>
-        <p><kbd>touch ex1.txt</kbd> touch는 리눅스 명령어로 CLI환경에서 용량 0의 파일을 만들 때 사용한다.</p>
-        <p>윈도우에서는 마우스 우클릭하고 새로 만들기를 사용하자.</p><br>
-
-        <p>만들어진 파일(txt든 뭐든)을 편집하고 <kbd>Ctrl + s</kbd>로 저장한다.</p>
-        <p>저장하고 <a href="#git_status"><code>git status</code></a> 명령어를 입력하면 현재 work stage에 변경 된 파일이 있는지 확인하고 알려준다.</p><br>
-
-        <h3>&bullet; Add file to index</h3>
-        <p><a href="#git_add"><code>git add</code></a> 명령어로 변경 된 파일에 대하여 index에 기록해보자.<br>현재 폴더내에서 모든 파일을 indexing 할 때는 <kbd>git add *</kbd> 명령어를 사용한다.</p>
-        <p>대부분의 git user는 <kbd>git add *</kbd>을 사용한다. <small>(파일명 별로 추가하는건 귀찮으니깐...)</small></p><br>
-
-        <h3>&bullet; Final stage : Commit</h3>
-        <p>파일은 indexing되면 user로부터 최종 확인을 위해 간략한 설명(commit)을 기다린다.</p>
-        <p><a href="#git_commit"><code>git commit</code></a>이 성공하게 되면 해당 파일의 버전에 대한 기록이 고유한 주소를 가진 파일로 .git에 기록된다.</p>
-        <p><kbd>git commit -m "남기고 싶은 메세지"</kbd>을 입력하자.</p>
-        <p>error가 뜨지 않았다면, 여러분은 성공적으로 파일의 첫 버전을 local에 등록(기록)하였다.</p><br>
-
-        <h3>&bullet; Confirm log of version</h3>
-        <p>최종 커밋 후 <a href="#git_log"><code>git log</code></a>명령어를 통해 commit 내용을 확인할 수 있다.</p>
-        <p>상하 방향키로 스크롤을 조종할 수 있다.<br><kbd>space_bar</kbd>를 누르면 한 페이지가 넘어가고, <kbd>q</kbd>를 누르면 종료된다.</p><br>
-        <p>모든 commit의 history를 다 보여주기 때문에 최근의 commit만 보고 싶은 경우 -(숫자) option을 추가해줄 수 있다.</p>
-        <p><small>example : <kbd>git log -2</kbd>는 가장 최근 2개의 commit 내역을 보여준다.</small></p><br>
-
-        <p>또한 -p 옵션을 이용하여 상세 history를 볼 수도 있다 : <kbd>git log -p</kbd></p><br>
-
-      </div>
-
-      <hr>
-
-      <div class="content">
-        <h1 id="index6">Synchronize local with remote</h1><br>
-        <p>이 강의 노트에 목적인 원격 저장소와 동기화 시키는 방법을 소개한다.</p><br>
-        <p>앞에서 만든 <a href="https://github.com" target="_blank">github repository</a>에 동기화 시키는 두가지 방법이있다.</p><br>
-        <ul>
-        	<li>
-        		<p>원격 저장소를 복제 후 push하여 update하는 방법</p>
-        	</li>
-        	<li>
-        		<p>기존에 버전 관리를 하고 있던 local 저장소를 원격 저장소에 추가하는 방법</p>
-        	</li>
-        </ul><br>
-
-        <p>두 가지 방법 중 어느 것이 맞고 틀린건 없다. 본인이 편한 방법대로 할 것!</p><br>
-
-        <h3>1. Cloning and Push</h3><br>
-        <p>우선 첫 번째 방법 먼저 살펴본다.</p><br>
-
-        <p>&bullet; <a href="#git_clone"><code>git clone [remote address]</code></a>명령어를 사용하여 원격 저장소를 복제한다.</p>
-        <p>&nbsp;&nbsp;앞에서 생성한 원격 저장소 이름과 똑같은 이름을 가진 폴더가 생성된다.</p>
-        <p>&nbsp;&nbsp;<a href="#git_init"><code>git init</code></a>때 와 마찬가지로 .git 이란 폴더 역시 생성된다.</p><br>
-
-        <p>&bullet;&nbsp;원격 저장소에서 복제해온 것이기 때문에 remote 주소를 따로 입력할 필요가 없다.</p>
-        <p>&nbsp;&nbsp;<code>git remote -v</code>를 입력해보자.</p>
-        <p>&nbsp;&nbsp;원격 저장소의 push 주소와 fetch 주소가 나온다.</p><br>
-
-        <p>&bullet;&nbsp;버전관리할 파일을 생성 / 편집 / 제거 후 <a href="#git_add"><code>git add</code></a>명령어로 추가 해준다.</p><br>
-
-        <p>&bullet;&nbsp;indexing된 파일을 commit하여 <u>local 저장소에서</u> 버전을 업데이트 한다.</p>
-        <p>&nbsp;&nbsp;여기서 아무리 <a href="#git_commit"><code>git commit</code></a>해봐야 원격 저장소는 <b>아직</b> 영향을 받지 않는다. <small class="text-muted">겁먹지 말자</small></p>
-        <p>&nbsp;&nbsp;만약 commit을 잘못 한 경우 <code>git revert</code>로 commit을 무마시킬 수 있다.</p>
-        <p>&nbsp;&nbsp;usage : <kbd>git revert [commit 주소]</kbd><br>&nbsp;&nbsp;&rarr; <small class="text-muted">git의 매커니즘을 완벽히 이해하고 쓰는 것이 좋다ㅠ</small></p><br>
-
-        <p>&bullet;&nbsp;이제 local의 최신 버전을 원격으로 push 해준다.</p>
-        <p>&nbsp;&nbsp;<a href="#git_push"><code>git push</code></a>를 입력하자. <small class="text-muted">So simple~</small></p><br>
-
-        <p>정리 : <code>git clone</code> &rarr; <code>git add</code> &rarr; <code>git commit</code> &rarr; <code>git push</code></p><br>
-
-        <h3>2. Add remote repository address to local repository</h3><br>
-        <p>두 번째 방법은 약간(?) 난이도가 있는 방법이다.</p>
-        <p>local에서 버전관리를 하던 workspace에 원격 주소를 추가 해주는 작업에서 초심자들은 온 갖 <span class="text-warning">trouble shooting</span>을 맞이할 수 있다.</p><br>
-
-        <p>&bullet;&nbsp;<a href="#git_init"><code>git init</code></a>으로 초기화가 되어 있는 local 저장소란 가정하에 진행한다.</p><p>&nbsp;&nbsp;우선 원격 저장소 주소를 입력해 주어야 한다.</p>
-        <p>&nbsp;&nbsp;<code>git remote add [저장소 닉네임] [github 주소]</code></p>
-        <p>&nbsp;&nbsp;[저장소 닉네임]을 지정하지 않고 remote add를 할 경우 자동으로 'origin'으로 등록된다.</p>
-        <p>&nbsp;&nbsp;example : <code>git remote add https://github.com/pulgitmaster/Git_Helper</code></p><br>
-
-        <p>&bullet;&nbsp;<code>git remote -v</code>로 주소가 제대로 입력되었는지 확인해본다.</p>
-        <p>&nbsp;&nbsp;잘못 입력된 경우 <code>git remote rm [닉네임]</code>으로 remote 주소를 제거할 수 있다.</p><br>
-
-        <p>&bullet;&nbsp;위와 마찬가지로 생성 / 편집 / 제거 할 파일을 <code>git add</code>부터 <code>git commit</code>까지 해주고</p>
-        <p>&nbsp;&nbsp;<code>git push origin master</code>를 입력!&nbsp; <small class="text-muted">최초 입력 후에는 <code>git push</code>만 해도 된다.</small></p><br>
-
-        <p>첫 번째 방법과 비슷하면서도 다른 면이 있다.</p>
-        <p>기존에 하던 버전 관리를 원격으로 까지 확장시킨다는 면에서는 이 방법을 아주 추천한다.</p><br>
-
-        <p>정리 : <code>git init</code> &rarr; 버전관리(local) &rarr; <code>git remote add</code> &rarr; <code>git push origin master</code></p>
-
-      </div>
-
-      <hr>
-
-      <h1 id="index7" hidden="true"><span class="text-warning">아</span> <span class="text-danger">어쩌라고</span> <span class="text-success"><b>난</b></span> <span class="text-primary">뭔소린지</span> <span class="text-secondary">1도 모르겠어</span></h1><br>
-      <ul>
-        <li>
-          <h2><code>gitk</code></h2><br>
-        </li>
-        <p>gitk를 입력하면 GUI 프로그램이 열린다.</p>
-        <p>여러분은 위에서 했던 모든 것을 클릭 몇 번으로 끝낼 수 있다...</p>
-        <p style="text-decoration: line-through;">이 방법도 이해 못하겠으면 걍 dropbox같은 웹하드 쓰는거 추천</p>
-        <br>
-        <p>console에 gitk 명령어 입력 시 아래와 같은 창을 볼 수 있다.</p>
-        <img src="img/gitk1.png" class="img-responsive" style="max-width: 520px;">
-      </ul>
+      <p>아래 <a href="https://git-scm.com/downloads" target="_blank">링크</a>에 들어간다.</p>
+      <p><a href="https://git-scm.com/downloads" target="_blank">https://git-scm.com/downloads</a></p><br>
+      <img src="img/git_scm.png" class="img-responsive">
+      <p>Windows 버전을 설치하자.</p><br>
+      <img src="img/git_scm_next.png" class="img-responsive">
+      <p>설치 과정 중 나오는 모든 Next를 눌러준다.</p>
+      <p>도중에 설정한 모든 내용은 후에 바꾸기 가능 Don't Worry</p>
       <br>
-
+      <h1>Installation</h1>
+    <blockquote>For Linux User  <small>based on Debian</small></blockquote>
+    <br>
+    <p>서버에 올라와 있는 최신 version의 어플리케이션을 받아온다.</p>
+    <kbd><big>sudo apt-get update</big></kbd><br>
+    <kbd><big>sudo apt-get upgrade</big></kbd><br>
+    <br>
+    <p>업데이트가 끝나면 git을 설치해준다.</p>
+    <kbd><big>sudo apt-get install git</big></kbd>
+    <p class="text-muted">So simple...</p>
+  </div>
+  <br>
+  <hr>
+  <div class="content">
+    <h1 id="index3">Learn basic command set</h1>
+    <blockquote>
+      여기서는 심각하게 기본적인 명령어만 다룬다.<br>advanced user는 걍 뒤로가기해서 시간 아끼는거 추천.
+    </blockquote>
+    <h3 id="git_init"><code>git init</code></h3><br>
+    <p>현재 경로에서 부터 버전관리를 시작하기 위한 로컬 저장소 생성</p>
+    <p><kbd>ls -al</kbd> 명령어로 .git 폴더(디렉터리)를 확인 할 수 있다.</p><br><br>
+    <h3 id="git_clone"><code>git clone</code></h3><br>
+    <p>예컨데, 여러분이 앞으로 절대적으로 가장 많이 쓸 명령어</p>
+    <p>원격 저장소에서 폴더(디렉터리) 통째로 copy 해온다.</p>
+    <p>사용은 너무나도 간단하다.</p>
+    <p>usage : <kbd>git clone [원격저장소의 주소]</kbd></p>
+    <br><br>
+    <h3 id="git_status"><code>git status</code></h3><br>
+    <p>변경된 이력의 파일에 대한 정보를 띄워준다.</p>
+    <p>무엇을 어떻게 인덱싱 해야하는지 친절히 알려준다.</p>
+    <p>usage : <kbd>git status</kbd></p>
+    <br><br>
+    <h3 id="git_add"><code>git add</code></h3><br>
+    <p>work stage에 있는 파일을 index에 기록하는 작업</p>
+    <p>index(인덱스)에 대한 설명이 너모너모 잘 되있는 곳 : <a href="https://backlog.com/git-tutorial/kr/intro/intro1_4.html" target="_blank">here</a></p>
+    <p>간단히 말하자면, <kbd>git commit</kbd>전에 반드시 <kbd>git add</kbd>로 indexing해야 한다.</p>
+    <p>usage : <kbd>git add .</kbd> <kbd>git add *</kbd> <kbd>git add README.md</kbd> <kbd>git add [FILE_NAME]</kbd></p>
+    <br><br>
+    <h3 id="git_commit"><code>git commit</code></h3><br>
+    <p>index에 기록된 파일을 최종 수정본으로 등록하는 작업</p>
+    <p>개인 작업 및 협업을 할 때 "~부분을 수정했다" 같은 짧은 노트를 남기면서 등록하는 개념,<br>수정된 부분에 대한 노트파일(ex .txt)을 따로 만들지 않아도 되는 아주 혜자 명령어.</p>
+    <p>usage : <kbd>git commit -m "my first commit"</kbd></p>
+    <p><small><kbd>git add</kbd>명령어로 indexing된 파일 모두 commit된다.</small></p><br>
+    <p>첫 commit시 아래와 같은 오류를 볼 수 있다.</p>
+    <img src="img/git_commit.png" class="img-responsive">
+    <p><small>누군지 알려달라고 하는데, --global 옵션은 만약 모든 원격 저장소에서 같은 이름(id)으로 commit을 한다면 사용해도 좋지만, 아닐 경우 <kbd>git config user.email "anonymous@mail.com"</kbd>과 같이 입력할 것!</small></p><br><br>
+    <h3 id="git_reset"><code>git reset</code></h3><br>
+    <p>이 명령어를 배우는 이유는 <kbd>git add</kbd>를 잘못하였을 경우</p>
+    <p><kbd>git reset</kbd>으로 git add로 indexing된 파일을 work stage 단계로 돌이킬 수 있음.</p>
+    <p>click! &rarr; <a href="img/git_reset.png" target="_blank">이미지를 열어 <b>확실히</b> 이해하기!</a></p>
+    <p>usage : <kbd>git reset</kbd> <kbd>git reset README.md</kbd></p><br><br>
+    <h3 id="git_log"><code>git log</code></h3><br>
+    <p>그 동안 어떤 파일을 commit하였는지 log를 알려주는 명령어</p>
+    <p>usage : <kbd>git log -p</kbd></p>
+    <p><small>-p 옵션은 <kbd>git diff</kbd>라는 명령어의 수고로움 까지 덜어준다. GOOD!</small></p><br><br>
+    <h3 id="git_pull"><code>git pull</code></h3><br>
+    <p>원격 저장소와 로컬저장소를 동기화 시켜주는 데 있어 가장 중요한 명령어</p>
+    <p>원격 저장소의 최신 버전을 현재 로컬 저장소에 적용한다.</p>
+    <p>단, 아래에서 더 심도있게 다루겠지만 최종 push된 버전의 파일에 대해 사용자가 로컬에서 별도의 버전(version)으로 commit하고 pull request 시 충돌(conflict)이 발생한다.</p>
+    <p>usage : <kbd>git pull</kbd></p><br><br>
+    <h3 id="git_push"><code>git push</code></h3><br>
+    <p>로컬에서 커밋 한 파일의 버전을 원격저장소로 업데이트 할때 사용</p>
+    <p>위의 <kbd>git pull</kbd>에 대해 충돌이 일어나지 않는 경우에 <kbd>git push</kbd>로 remote의 버전 업데이트가 가능하다.</p>
+    <p>usage : <kbd>git push</kbd></p>
+    <p class="text-muted"><small>난 충돌이 뭔지도 모르겠고, 충돌을 경험하기 싫다면 <kbd>git pull</kbd> &rarr; <kbd>git push</kbd></small></p><br><br>
+    <h3 id="git_fetch"><code>git fetch</code></h3><br>
+    <p>쓰임새는 <kbd>git pull</kbd>과 같지만, 로컬에서 사용자의 파일에 대한 수정을 존중(?)해준다.</p>
+    <p>예를 들자면, 로컬 저장소에서 원격 저장소와 같은 버전의 파일을 수정하고 <kbd>git pull</kbd> 명령어를 입력하면 다음과 같은 error를 볼 수 있다.</p>
+    <img src="img/conflict0.png" class="img-responsive">
+    <p>반면 <kbd>git fetch</kbd> 명령어를 사용할 경우 Smooth하게 넘어가준다.</p>
+    <p>버전만 맞을 경우 사용자가 <u>필요에 의해 수정을 했다</u>라고 판단하기 때문이다.</p>
+    <p>하지만 이런 유연함 때문에 오히려 초보자들에게는 <span class="text-success">'독'</span> 이 될 수도 있다.</p>
+    <p>usage : <kbd>git fetch</kbd></p><br><br>
+    <p>위의 명령어 외에도 수 많은 명령어가 있다.</p>
+    <p>아주 기초가 되는 기본적인 명령어는 다 소개했으니 심화 학습을 원한다면 <a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-명령어-설치와-설정" target="_blank">공식 git-document 사이트</a>에서 명령어를 직접 실습해보면서 공부하는 것을 추천한다.</p>
+    <br>
+  </div>
+  <hr>
+  <div class="content">
+    <h1 id="index4">Making your own <a href="https://github.com/" target="_blank">github</a> repository&nbsp;<img src="img/github-mark.png" width="8%"></h1><br>
+    <p>우선 왜 깃헙을 써야할까?</p><br>
+    <ul>
+      <li><p>가장 활성화 된 커뮤니티 in the world</p></li>
+      <li><p>여러분에게 공짜로 저장소를 줌.</p></li>
+      <li><p>솔직히 github 없었으면 그동안 했던 과제나 프로젝트 어떻게 됬을까? &nbsp;<small class="text-muted">필자는 상상이 안됨</small></p></li>
+      <li><p>최신 기술의 트랜드를 한 눈에 보여줌.</p></li>
       <ul>
         <li>
-          <h3>update <kbd>F5</kbd></h3>
+          <p>
+            <a href="https://github.com/trending" target="_blank">github에서 실시간으로 가장 인기 많은 프로젝트(저장소)</a>
+          </p>
         </li>
-        <p>File &rarr; update를 누르면, 현재 workspace에서 변경 사항이 있는 파일을 자동으로 검색해준다.</p>
-        <p><code>git status</code>와 같은 기능을 한다.</p>
-        <p>현재 위에 <em>Local uncommited changes, not checked in to index</em> 으로 현재 변경된 파일이 indexing되지 않은 것을 알 수 있다.</p>
-      </ul>
-
-      <ul>
         <li>
-          <h3>Start git gui</h3>
+          <p>
+            <a href="https://madnight.github.io/githut/#/pull_requests/2017/4" target="_blank">2017년 4분기(하반기) 가장 인기 많은 프로그래밍 언어</a>
+          </p>
         </li>
-        <p>File &rarr; Start git gui를 누르면 현재 경로에서 모든 파일을 다 추적해서 상태를 보여준다.</p>
-        <img src="img/gitk2.png" class="img-responsive" style="max-width: 640px;"><br><br>
-
-        <p><kbd>Stage Changed</kbd>를 누르면 <span class="text-danger">Unstaged Changes</span>에 있는 파일들이 <span class="text-success">Stage Changes(INDEX)</span>로 이동하며 <kbd>Commit</kbd>을 기다리는 상태가 된다.</span></p>
-        <img src="img/gitk3.png" class="img-responsive" style="max-width: 640px;"><br><br>
-
-        <p>Commit Message란에 커밋할 메세지를 작성하고, <kbd>Commit</kbd>버튼을 눌러 Commit!</p>
-        <p>Commit을 누르고 나면 stage에 파일이 비워지면서 commit이 실행된다.</p>
-        <img src="img/gitk4.png" class="img-responsive" style="max-width:320px;"><br><br>
-
-        <p><kbd>Push</kbd>를 누르면 저장된 remote 주소로 git push가 완료된다.</p>
-        <img src="img/gitk5.png" class="img-responsive" style="max-width: 640px;"><br><br>
-
-        <p><span class="text-danger">cf)</span> 만약 remote주소가 지정되어 있지 않다면 Remote &rarr; Add... 로 가서 remote address를 추가해준다(github주소)</p>
-        <img src="img/gitk6.png" class="img-responsive" style="max-width:480px;"><br>
-        <p><span style="text-decoration: line-through;">솔직히 이 정도면 git을 어떻게든 쓸 수 있게끔 작성했다고 생각하지만</span><br>여전히 잘 이해가 되지 않는다면 <kbd>gist</kbd>를 이용해보자!</p><br>
       </ul>
-      
-      <ul>
-        <li>
-          <h2><kbd>gist</kbd>&nbsp;&nbsp;<small>code snippet 또는 파일 하나로 이루어진 코드를 올리는 곳!</small></h2><br>
-        </li>
-        <h4> url에 <a href="https://gist.github.com" target="_blank">https://gist.github.com</a> 를 입력한다.</h4>
-        <img src="img/gist.png" class="img-responsive" style="max-width: 480px;"><br><br>
-        <p>파일 이름을 입력해주고 여러분의 코드를 Ctrl+C, Ctrl+V로 복붙한 뒤 <kbd>Create public gist</kbd>버튼을 눌러주면 끝!</p><br>
-        <p>버전 관리를 생활화 합시다!!</p>
-      </ul>
-
-      <hr>
-
-  		<h1>URL reference</h1>
-  		<blockquote>여러분에게 도움이 될만한 사이트의 주소</blockquote>
-  		<ul>
-  			<li>
-  				<h4><a href="https://opentutorials.org/course/1492" target="_blank">https://opentutorials.org/course/1492</a></h4>
-  				<p>이번 강의에서 다루지 않은 GUI tool을 이용한 git을 배울 수 있다.</p>
-  				<p><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a>란 유명한 GUI 버전 관리 프로그램을 이용한다.</p>
-  			</li><br>
-  			<li>
-  				<h4><a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95" target="_blank">https://git-scm.com</a></h4>
-  				<p>개발자에게는 공식 사이트가 가장 우선시 되어야한다 신뢰도가 보장 되기 때문이다.</p>
-  				<p>위의 사이트는 git 공식 사이트이며, git에 대한 모든 내용을 담고 있다.</p>
-  			</li>
-  		</ul>
-  		
-  	</div>
-    <script type="text/javascript">
-    	$(document).ready(function(){
-    		$(window).width(function(){
-    			//$("span.size").text($(this).width());
-          console.log("Window size : "+$(this).width());
-    		})
-    		$(window).resize(function(){
-          //$("span.size").text($(this).width());
-          console.log("Window size : "+$(this).width());
-        });
-        var h4_tag_cnt = $("ul.head_index > li > h4").length;
-        console.log("total h4 tag num : " + h4_tag_cnt);
-
-        $("ul > li > h4:eq(0)").click(function(){
-        //0부터 시작해서 1번째인 0번 h4 select (ul li inner tag만)
-          $('html, body').animate({
-            scrollTop: $("#index1").offset().top
-          }, 500);
-        })
-
-        $("ul > li > h4:eq(1)").click(function(){
-          $('html, body').animate({
-            scrollTop: $("#index2").offset().top
-          }, 500);
-        })
-
-        $("ul > li > h4:eq(2)").click(function(){
-          $('html, body').animate({
-            scrollTop: $("#index3").offset().top
-          }, 500);
-        })
-
-        $("ul > li > h4:eq(3)").click(function(){
-          $('html, body').animate({
-            scrollTop: $("#index4").offset().top
-          }, 500);
-        })
-
-        $("ul > li > h4:eq(4)").click(function(){
-          $('html, body').animate({
-            scrollTop: $("#index5").offset().top
-          }, 500);
-        })
-
-        $("ul > li > h4:eq(5)").click(function(){
-          $('html, body').animate({
-            scrollTop: $("#index6").offset().top
-          }, 500);
-        })
-
-        $("ul > li > h4:eq(6)").click(function(){
-          $('html, body').animate({
-            scrollTop: $("#index7").offset().top
-          }, 500);
-        })
-
-        /* hidden stage */
-        $(".head_img").click(function(){
-          $("ul.head_index > li").show();          
-          $("#index7").show();
-        })
-
-    	})
-    </script>
-
+      <li><p>그 외의 경이로운 통계들(2017년 8월 기준) &rarr; <a href="https://expandedramblings.com/index.php/github-statistics/" target="_blank">link</a></p></li>
+    </ul><br>
+    <a href="https://github.com" target="_blank"><img src="img/github-logo2.png" width="20%" title="github 메인 페이지 열기"></a>
+    <p>직접 github repository를 만들어보자. start a project 버튼 누르기</p><br>
+    <img src="img/making_repository1.png" class="img-responsive">
+    <p style="text-decoration: line-through;"><small>여러분이 매일 프로젝트(혹은 과제)를 하면서 <span class="text-primary">Download ZIP</span> 버튼만 눌렀던 그 사이트가 맞음.</small></p><br>
+    <p>&bullet; github에서는 기본적으로 다른 사람과 프로젝트 이름이 겹쳐도 무방하다.</p>
+    <p>&nbsp;&rarr; Owner 단위로 관리하기 때문.</p><br>
+    <p>&bullet; Initialize this repository with a README 라는 check box가 있는데 check를 하고 Create 버튼을 누른다.</p><br>
+    <p>&bullet; README.md 파일은 저장소에 대한 설명을 적어 놓는 markdown 이란 파일이다.</p>
+    <p>&nbsp;&nbsp;markdown 파일의 작성법은 <a href="https://gist.github.com/ihoneymon/652be052a0727ad59601" target="_blank">여기에서</a> 확인할 수 있다. <small class="text-danger">설명이 너무 잘되어 있다.</small></p><br>
+  </div>
+  <hr>
+  <div class="content">
+    <h1 id="index5">Version control at local</h1><br>
+    <p>본격적으로 버전 관리를 git bash를 이용해 실습해본다.</p><br>
+    <h3>&bullet; Initialize local git repository</h3>
+    <p><a href="https://git-scm.com/downloads" target="_blank">git-scm</a>사이트에서 파일을 다운받고 나면 <u>버전 관리할 폴더 내에서</u> 우클릭 하면 아래와 같이 'git bash here'이란 버튼을 볼 수 있다.</p>
+    <img src="img/git_bash1.png" class="img-responsive"><br>
+    <p>누르게 되면 다음과 같은 화면이 뜨는데, <a href="#git_init"><code>git init</code></a>을 입력한다.</p>
+    <p>.git이란 숨겨진 폴더가 생성되며, 앞으로 여러분의 모든 커밋<small>(버전에 대한 기록)</small>은 이 폴더에 저장된다.</p><br>
+    <p>버전관리할 파일을 만들어본다.</p>
+    <p><kbd>touch ex1.txt</kbd> touch는 리눅스 명령어로 CLI환경에서 용량 0의 파일을 만들 때 사용한다.</p>
+    <p>윈도우에서는 마우스 우클릭하고 새로 만들기를 사용하자.</p><br>
+    <p>만들어진 파일(txt든 뭐든)을 편집하고 <kbd>Ctrl + s</kbd>로 저장한다.</p>
+    <p>저장하고 <a href="#git_status"><code>git status</code></a> 명령어를 입력하면 현재 work stage에 변경 된 파일이 있는지 확인하고 알려준다.</p><br>
+    <h3>&bullet; Add file to index</h3>
+    <p><a href="#git_add"><code>git add</code></a> 명령어로 변경 된 파일에 대하여 index에 기록해보자.<br>현재 폴더내에서 모든 파일을 indexing 할 때는 <kbd>git add *</kbd> 명령어를 사용한다.</p>
+    <p>대부분의 git user는 <kbd>git add *</kbd>을 사용한다. <small>(파일명 별로 추가하는건 귀찮으니깐...)</small></p><br>
+    <h3>&bullet; Final stage : Commit</h3>
+    <p>파일은 indexing되면 user로부터 최종 확인을 위해 간략한 설명(commit)을 기다린다.</p>
+    <p><a href="#git_commit"><code>git commit</code></a>이 성공하게 되면 해당 파일의 버전에 대한 기록이 고유한 주소를 가진 파일로 .git에 기록된다.</p>
+    <p><kbd>git commit -m "남기고 싶은 메세지"</kbd>을 입력하자.</p>
+    <p>error가 뜨지 않았다면, 여러분은 성공적으로 파일의 첫 버전을 local에 등록(기록)하였다.</p><br>
+    <h3>&bullet; Confirm log of version</h3>
+    <p>최종 커밋 후 <a href="#git_log"><code>git log</code></a>명령어를 통해 commit 내용을 확인할 수 있다.</p>
+    <p>상하 방향키로 스크롤을 조종할 수 있다.<br><kbd>space_bar</kbd>를 누르면 한 페이지가 넘어가고, <kbd>q</kbd>를 누르면 종료된다.</p><br>
+    <p>모든 commit의 history를 다 보여주기 때문에 최근의 commit만 보고 싶은 경우 -(숫자) option을 추가해줄 수 있다.</p>
+    <p><small>example : <kbd>git log -2</kbd>는 가장 최근 2개의 commit 내역을 보여준다.</small></p><br>
+    <p>또한 -p 옵션을 이용하여 상세 history를 볼 수도 있다 : <kbd>git log -p</kbd></p><br>
+  </div>
+  <hr>
+  <div class="content">
+    <h1 id="index6">Synchronize local with remote</h1><br>
+    <p>이 강의 노트에 목적인 원격 저장소와 동기화 시키는 방법을 소개한다.</p><br>
+    <p>앞에서 만든 <a href="https://github.com" target="_blank">github repository</a>에 동기화 시키는 두가지 방법이있다.</p><br>
+    <ul>
+      <li>
+        <p>원격 저장소를 복제 후 push하여 update하는 방법</p>
+      </li>
+      <li>
+        <p>기존에 버전 관리를 하고 있던 local 저장소를 원격 저장소에 추가하는 방법</p>
+      </li>
+    </ul><br>
+    <p>두 가지 방법 중 어느 것이 맞고 틀린건 없다. 본인이 편한 방법대로 할 것!</p><br>
+    <h3>1. Cloning and Push</h3><br>
+    <p>우선 첫 번째 방법 먼저 살펴본다.</p><br>
+    <p>&bullet; <a href="#git_clone"><code>git clone [remote address]</code></a>명령어를 사용하여 원격 저장소를 복제한다.</p>
+    <p>&nbsp;&nbsp;앞에서 생성한 원격 저장소 이름과 똑같은 이름을 가진 폴더가 생성된다.</p>
+    <p>&nbsp;&nbsp;<a href="#git_init"><code>git init</code></a>때 와 마찬가지로 .git 이란 폴더 역시 생성된다.</p><br>
+    <p>&bullet;&nbsp;원격 저장소에서 복제해온 것이기 때문에 remote 주소를 따로 입력할 필요가 없다.</p>
+    <p>&nbsp;&nbsp;<code>git remote -v</code>를 입력해보자.</p>
+    <p>&nbsp;&nbsp;원격 저장소의 push 주소와 fetch 주소가 나온다.</p><br>
+    <p>&bullet;&nbsp;버전관리할 파일을 생성 / 편집 / 제거 후 <a href="#git_add"><code>git add</code></a>명령어로 추가 해준다.</p><br>
+    <p>&bullet;&nbsp;indexing된 파일을 commit하여 <u>local 저장소에서</u> 버전을 업데이트 한다.</p>
+    <p>&nbsp;&nbsp;여기서 아무리 <a href="#git_commit"><code>git commit</code></a>해봐야 원격 저장소는 <b>아직</b> 영향을 받지 않는다. <small class="text-muted">겁먹지 말자</small></p>
+    <p>&nbsp;&nbsp;만약 commit을 잘못 한 경우 <code>git revert</code>로 commit을 무마시킬 수 있다.</p>
+    <p>&nbsp;&nbsp;usage : <kbd>git revert [commit 주소]</kbd><br>&nbsp;&nbsp;&rarr; <small class="text-muted">git의 매커니즘을 완벽히 이해하고 쓰는 것이 좋다ㅠ</small></p><br>
+    <p>&bullet;&nbsp;이제 local의 최신 버전을 원격으로 push 해준다.</p>
+    <p>&nbsp;&nbsp;<a href="#git_push"><code>git push</code></a>를 입력하자. <small class="text-muted">So simple~</small></p><br>
+    <p>정리 : <code>git clone</code> &rarr; <code>git add</code> &rarr; <code>git commit</code> &rarr; <code>git push</code></p><br>
+    <h3>2. Add remote repository address to local repository</h3><br>
+    <p>두 번째 방법은 약간(?) 난이도가 있는 방법이다.</p>
+    <p>local에서 버전관리를 하던 workspace에 원격 주소를 추가 해주는 작업에서 초심자들은 온 갖 <span class="text-warning">trouble shooting</span>을 맞이할 수 있다.</p><br>
+    <p>&bullet;&nbsp;<a href="#git_init"><code>git init</code></a>으로 초기화가 되어 있는 local 저장소란 가정하에 진행한다.</p><p>&nbsp;&nbsp;우선 원격 저장소 주소를 입력해 주어야 한다.</p>
+    <p>&nbsp;&nbsp;<code>git remote add [저장소 닉네임] [github 주소]</code></p>
+    <p>&nbsp;&nbsp;[저장소 닉네임]을 지정하지 않고 remote add를 할 경우 자동으로 'origin'으로 등록된다.</p>
+    <p>&nbsp;&nbsp;example : <code>git remote add https://github.com/pulgitmaster/Git_Helper</code></p><br>
+    <p>&bullet;&nbsp;<code>git remote -v</code>로 주소가 제대로 입력되었는지 확인해본다.</p>
+    <p>&nbsp;&nbsp;잘못 입력된 경우 <code>git remote rm [닉네임]</code>으로 remote 주소를 제거할 수 있다.</p><br>
+    <p>&bullet;&nbsp;위와 마찬가지로 생성 / 편집 / 제거 할 파일을 <code>git add</code>부터 <code>git commit</code>까지 해주고</p>
+    <p>&nbsp;&nbsp;<code>git push origin master</code>를 입력!&nbsp; <small class="text-muted">최초 입력 후에는 <code>git push</code>만 해도 된다.</small></p><br>
+    <p>첫 번째 방법과 비슷하면서도 다른 면이 있다.</p>
+    <p>기존에 하던 버전 관리를 원격으로 까지 확장시킨다는 면에서는 이 방법을 아주 추천한다.</p><br>
+    <p>정리 : <code>git init</code> &rarr; 버전관리(local) &rarr; <code>git remote add</code> &rarr; <code>git push origin master</code></p>
+  </div>
+  <hr>
+  
+  <div class="content" id="index7">
+    <h1 id="index7" hidden="true"><span class="text-warning">아</span> <span class="text-danger">어쩌라고</span> <span class="text-success"><b>난</b></span> <span class="text-primary">뭔소린지</span> <span class="text-secondary">1도 모르겠어</span></h1><br>
+    <ul>
+      <li>
+        <h2><code>gitk</code></h2><br>
+      </li>
+      <p>gitk를 입력하면 GUI 프로그램이 열린다.</p>
+      <p>여러분은 위에서 했던 모든 것을 클릭 몇 번으로 끝낼 수 있다...</p>
+      <p style="text-decoration: line-through;">이 방법도 이해 못하겠으면 걍 dropbox같은 웹하드 쓰는거 추천</p>
+      <br>
+      <p>console에 gitk 명령어 입력 시 아래와 같은 창을 볼 수 있다.</p>
+      <img src="img/gitk1.png" class="img-responsive" style="max-width: 520px;">
+    </ul>
+    <br>
+    <ul>
+      <li>
+        <h3>update <kbd>F5</kbd></h3>
+      </li>
+      <p>File &rarr; update를 누르면, 현재 workspace에서 변경 사항이 있는 파일을 자동으로 검색해준다.</p>
+      <p><code>git status</code>와 같은 기능을 한다.</p>
+      <p>현재 위에 <em>Local uncommited changes, not checked in to index</em> 으로 현재 변경된 파일이 indexing되지 않은 것을 알 수 있다.</p>
+    </ul>
+    <ul>
+      <li>
+        <h3>Start git gui</h3>
+      </li>
+      <p>File &rarr; Start git gui를 누르면 현재 경로에서 모든 파일을 다 추적해서 상태를 보여준다.</p>
+      <img src="img/gitk2.png" class="img-responsive" style="max-width: 640px;"><br><br>
+      <p><kbd>Stage Changed</kbd>를 누르면 <span class="text-danger">Unstaged Changes</span>에 있는 파일들이 <span class="text-success">Stage Changes(INDEX)</span>로 이동하며 <kbd>Commit</kbd>을 기다리는 상태가 된다.</span></p>
+      <img src="img/gitk3.png" class="img-responsive" style="max-width: 640px;"><br><br>
+      <p>Commit Message란에 커밋할 메세지를 작성하고, <kbd>Commit</kbd>버튼을 눌러 Commit!</p>
+      <p>Commit을 누르고 나면 stage에 파일이 비워지면서 commit이 실행된다.</p>
+      <img src="img/gitk4.png" class="img-responsive" style="max-width:320px;"><br><br>
+      <p><kbd>Push</kbd>를 누르면 저장된 remote 주소로 git push가 완료된다.</p>
+      <img src="img/gitk5.png" class="img-responsive" style="max-width: 640px;"><br><br>
+      <p><span class="text-danger">cf)</span> 만약 remote주소가 지정되어 있지 않다면 Remote &rarr; Add... 로 가서 remote address를 추가해준다(github주소)</p>
+      <img src="img/gitk6.png" class="img-responsive" style="max-width:480px;"><br>
+      <p><span style="text-decoration: line-through;">솔직히 이 정도면 git을 어떻게든 쓸 수 있게끔 작성했다고 생각하지만</span><br>여전히 잘 이해가 되지 않는다면 <kbd>gist</kbd>를 이용해보자!</p><br>
+    </ul>
     
-  </body>
+    <ul>
+      <li>
+        <h2><kbd>gist</kbd>&nbsp;&nbsp;<small>code snippet 또는 파일 하나로 이루어진 코드를 올리는 곳!</small></h2><br>
+      </li>
+      <h4> url에 <a href="https://gist.github.com" target="_blank">https://gist.github.com</a> 를 입력한다.</h4>
+      <img src="img/gist.png" class="img-responsive" style="max-width: 480px;"><br><br>
+      <p>파일 이름을 입력해주고 여러분의 코드를 Ctrl+C, Ctrl+V로 복붙한 뒤 <kbd>Create public gist</kbd>버튼을 눌러주면 끝!</p><br>
+      <p>버전 관리를 생활화 합시다!!</p>
+    </ul>
+  </div>
+  <hr>
+  <h1>URL reference</h1>
+<blockquote>여러분에게 도움이 될만한 사이트의 주소</blockquote>
+<ul>
+  <li>
+    <h4><a href="https://opentutorials.org/course/1492" target="_blank">https://opentutorials.org/course/1492</a></h4>
+    <p>이번 강의에서 다루지 않은 GUI tool을 이용한 git을 배울 수 있다.</p>
+    <p><a href="https://www.sourcetreeapp.com/" target="_blank">SourceTree</a>란 유명한 GUI 버전 관리 프로그램을 이용한다.</p>
+  </li><br>
+  <li>
+    <h4><a href="https://git-scm.com/book/ko/v2/Appendix-C%3A-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%84%A4%EC%B9%98%EC%99%80-%EC%84%A4%EC%A0%95" target="_blank">https://git-scm.com</a></h4>
+    <p>개발자에게는 공식 사이트가 가장 우선시 되어야한다 신뢰도가 보장 되기 때문이다.</p>
+    <p>위의 사이트는 git 공식 사이트이며, git에 대한 모든 내용을 담고 있다.</p>
+  </li>
+</ul>
+
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(window).width(function(){
+      //$("span.size").text($(this).width());
+console.log("Window size : "+$(this).width());
+    })
+    $(window).resize(function(){
+//$("span.size").text($(this).width());
+console.log("Window size : "+$(this).width());
+});
+var h4_tag_cnt = $("ul.head_index > li > h4").length;
+console.log("total h4 tag num : " + h4_tag_cnt);
+$("ul > li > h4:eq(0)").click(function(){
+//0부터 시작해서 1번째인 0번 h4 select (ul li inner tag만)
+$('html, body').animate({
+scrollTop: $("#index1").offset().top
+}, 500);
+})
+$("ul > li > h4:eq(1)").click(function(){
+$('html, body').animate({
+scrollTop: $("#index2").offset().top
+}, 500);
+})
+$("ul > li > h4:eq(2)").click(function(){
+$('html, body').animate({
+scrollTop: $("#index3").offset().top
+}, 500);
+})
+$("ul > li > h4:eq(3)").click(function(){
+$('html, body').animate({
+scrollTop: $("#index4").offset().top
+}, 500);
+})
+$("ul > li > h4:eq(4)").click(function(){
+$('html, body').animate({
+scrollTop: $("#index5").offset().top
+}, 500);
+})
+$("ul > li > h4:eq(5)").click(function(){
+$('html, body').animate({
+scrollTop: $("#index6").offset().top
+}, 500);
+})
+$("ul > li > h4:eq(6)").click(function(){
+$('html, body').animate({
+scrollTop: $("#index7").offset().top
+}, 500);
+})
+/* hidden stage */
+$(".head_img").click(function(){
+$("ul.head_index > li").show();
+$("#index7").show();
+})
+  })
+</script>
+
+</body>
 </html>
