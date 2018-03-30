@@ -422,14 +422,14 @@
       <h1 id="index7"><span class="text-warning">아</span> <span class="text-danger">어쩌라고</span> <span class="text-success"><b>난</b></span> <span class="text-primary">뭔소린지</span> <span class="text-secondary">1도 모르겠어</span></h1><br>
       <ul>
         <li>
-          <h2><code>gitk</code></h2>
+          <h2><code>gitk</code></h2><br>
         </li>
         <p>gitk를 입력하면 GUI 프로그램이 열린다.</p>
         <p>여러분은 위에서 했던 모든 것을 클릭 몇 번으로 끝낼 수 있다...</p>
         <p style="text-decoration: line-through;">이 방법도 이해 못하겠으면 걍 dropbox같은 웹하드 쓰는거 추천</p>
         <br>
         <p>console에 gitk 명령어 입력 시 아래와 같은 창을 볼 수 있다.</p>
-        <img src="img/gitk1.png" class="img-responsive" style="max-width: 640px;">
+        <img src="img/gitk1.png" class="img-responsive" style="max-width: 520px;">
       </ul>
       <br>
 
@@ -447,11 +447,33 @@
           <h3>Start git gui</h3>
         </li>
         <p>File &rarr; Start git gui를 누르면 현재 경로에서 모든 파일을 다 추적해서 상태를 보여준다.</p>
-        <img src="img/gitk2.png" class="img-responsive" style="max-width: 640px;">
-        <p><code>git status</code>와 같은 기능을 한다.</p>
-        <p>현재 위에 <em>Local uncommited changes, not checked in to index</em> 으로 현재 변경된 파일이 indexing되지 않은 것을 알 수 있다.</p>
+        <img src="img/gitk2.png" class="img-responsive" style="max-width: 640px;"><br><br>
+
+        <p><kbd>Stage Changed</kbd>를 누르면 <span class="text-danger">Unstaged Changes</span>에 있는 파일들이 <span class="text-success">Stage Changes(INDEX)</span>로 이동하며 <kbd>Commit</kbd>을 기다리는 상태가 된다.</span></p>
+        <img src="img/gitk3.png" class="img-responsive" style="max-width: 640px;"><br><br>
+
+        <p>Commit Message란에 커밋할 메세지를 작성하고, <kbd>Commit</kbd>버튼을 눌러 Commit!</p>
+        <p>Commit을 누르고 나면 stage에 파일이 비워지면서 commit이 실행된다.</p>
+        <img src="img/gitk4.png" class="img-responsive" style="max-width:320px;"><br><br>
+
+        <p><kbd>Push</kbd>를 누르면 저장된 remote 주소로 git push가 완료된다.</p>
+        <img src="img/gitk5.png" class="img-responsive" style="max-width: 640px;"><br><br>
+
+        <p><span class="text-danger">cf)</span> 만약 remote주소가 지정되어 있지 않다면 Remote &rarr; Add... 로 가서 remote address를 추가해준다(github주소)</p>
+        <img src="img/gitk6.png" class="img-responsive" style="max-width:480px;"><br>
+        <p><span style="text-decoration: line-through;">솔직히 이 정도면 git을 어떻게든 쓸 수 있게끔 작성했다고 생각하지만</span><br>여전히 잘 이해가 되지 않는다면 <kbd>gist</kbd>를 이용해보자!</p><br>
       </ul>
       
+      <ul>
+        <li>
+          <h2><kbd>gist</kbd>&nbsp;&nbsp;<small>code snippet 또는 파일 하나로 이루어진 코드를 올리는 곳!</small></h2><br>
+        </li>
+        <h4> url에 <a href="https://gist.github.com" target="_blank">https://gist.github.com</a> 를 입력한다.</h4>
+        <img src="img/gist.png" class="img-responsive" style="max-width: 480px;"><br><br>
+        <p>파일 이름을 입력해주고 여러분의 코드를 Ctrl+C, Ctrl+V로 복붙한 뒤 <kbd>Create public gist</kbd>버튼을 눌러주면 끝!</p><br>
+        <p>버전 관리를 생활화 합시다!!</p>
+      </ul>
+
       <hr>
 
   		<h1>URL reference</h1>
